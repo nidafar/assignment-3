@@ -1,0 +1,49 @@
+<head>
+<title>js assignment</title>
+</head>
+<body>
+    <script>
+    /*A. Ask the user what color he/she wants to add to the beginning & add that
+color to the beginning of the array. Display the updated array in your
+browser.
+B. Ask the user what color he/she wants to add to the end & add that color to
+the end of the array. Display the updated array in your browser.
+C. Add two more color to the beginning of the array. Display the updated
+array in your browser.
+D. Delete the first color in the array. Display the updated array in your
+browser.
+E. Delete the last color in the array. Display the updated array in your
+browser.
+F. Ask the user at which index he/she wants to add a color & color name.
+Then add the color to desired position/index. Display the updated array in
+your browser.
+G. Ask the user at which index he/she wants to delete color(s) & how many
+colors he/she wants to delete. Then remove the same number of color(s)
+from user-defined position/index. . Display the updated*/
+var colors = ["red" , "green" , "blue"];
+alert("colors: "+colors);
+document.write(colors + "<br>");
+var addColor = prompt("which color do you want to add at the begining?");
+colors.unshift(addColor);
+alert(colors);
+document.write(colors+"<br>");
+var addColorEnd = prompt("which color do you want to add at the end?");
+colors.push(addColorEnd);
+alert(colors);
+document.write(colors+"<br>");
+var updateColor = +prompt("at which index do you want to add color?");
+var newColor =  prompt("which color do you want to add on that index? ");
+colors.splice(updateColor,0,newColor);
+alert(colors);
+document.write(colors+"<br>");
+var deleteColor =  +prompt("at which index do you want to delete color?");
+var colorsDeleted = prompt("how many colors do you want to delete on that index?");
+colors.splice(deleteColor,--colorsDeleted);
+alert(colors);
+document.write(colors+"<br>");
+
+   
+    </script>
+</body>
+</html>
+

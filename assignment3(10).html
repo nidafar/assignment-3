@@ -1,0 +1,28 @@
+<head>
+<title>js assignment</title>
+</head>
+<body>
+    <script>
+/*10.Sort an array from smallest to largest value
+
+A = [20,53,78,4,91,12]
+Output should be: [4,12,20,53,78,91].*/
+var a = [20,53,78,4,91,12];
+var b = [];
+for (var i = 0, ii= a.length; i < ii; i++){
+    var inserted = false;
+    for (var j = 0, jj = b.length; j < jj; j++){
+        if (a[i] < b[j]) {
+            inserted = true;
+            b.splice(j, 0, a[i]);
+            break;
+        }
+    } if (!inserted)
+    b.push(a[i]);
+}
+document.write(b);
+   
+    </script>
+</body>
+</html>
+

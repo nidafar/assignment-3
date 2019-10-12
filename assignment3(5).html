@@ -1,0 +1,23 @@
+<head>
+<title>js assignment</title>
+</head>
+<body>
+    <script>
+/* Write a JavaScript program to remove all duplicate items from an array
+Sample array : var arr1=[3, 'a', 'a', '''a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+Sample Output : [3, ‘a’, 2, 4, 9]*/
+var arr = [3, 'a','a','a', 2, 3,'a' ,3, 'a', 2, 4, 9, 3];
+var result = [];
+var obj = {};
+for (var i = 0; i < arr.length; i++) {
+    obj[arr[i]] = 0;
+}
+for (i in obj) 
+{result.push(i);}
+document.write(arr + "<br>");
+document.write("after removal of duplicates: " + result);
+   
+    </script>
+</body>
+</html>
+
